@@ -1,0 +1,45 @@
+form {
+    flex-direction: column;
+    gap: 1rem;
+
+    #item {
+        height: 44px;
+        border:2px solid var(--border-primary) ;
+        border-radius: 12px;
+        padding-left: 18px;
+
+    
+        &::placeholder{
+            font-family: var(--font-family);
+            font-size: 1rem;
+            font-weight: 400;
+            color:var(--content-tertiary)
+        }
+    }
+
+    & button {
+        height: 44px;
+        border: none;
+        border-radius: 12px;
+        margin-bottom: 40px;
+        background-color: var(--color-brand);
+        font: var(--label);
+        color: var(--always-white);
+    }
+
+    & ul li {
+        align-items: center;
+        list-style: none;
+        padding-inline: 12px;
+        gap: 12px;
+        background-color: var(--background-secondary);
+        height: 44px;
+        border-radius: 12px;
+
+        & div {
+            margin-left: auto;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+}

@@ -7,7 +7,7 @@
 :root {
     /* Background */
     --background-primary:#f4f5fb;
-    --baackground-secondary:#ffffff;
+    --background-secondary:#ffffff;
     /* Color */
     --color-brand:#ca3884;
     --color-brand-hover:#a52c6b;
@@ -23,7 +23,7 @@
 
     /* Tipografia */
     --font-family:"Inter", sans-serif;
-    --title:700 1.5rem/200% var(--font-family);
+    --title:800 1.5rem/200% var(--font-family);
     --label:600 1rem/125% var(--font-family);
     --paragraph:500 1rem/125% var(--font-family);
     --link:500 .875rem/100% var(--font-family);
@@ -34,7 +34,7 @@ body {
 }
 
 main {
-    background-color: #374151;
+    /* background-color: #374151; */
     width: 326px;
     margin-inline: auto;
 }
