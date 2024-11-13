@@ -80,7 +80,7 @@ header {
 
 /* Alert de delete */
 
-footer {
+#alert {
     /* display: none; */
     width: 326px;
     height: 44px;
@@ -124,7 +124,7 @@ footer {
         width: 627px;
     }
 
-    footer {
+    #alert {
         width: 627px;
     }
 
