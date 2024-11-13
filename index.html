@@ -7,10 +7,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <title>Lista de compras</title>
 </head>
 <body>
     <main>
+        <div id="logo" class="flex">
+            <img src="assets/img/logo.svg" alt="">
+            <h1>quicklist</h1>
+        </div>
         <header class="flex">
             <a href="#">
                 <img src="assets/icons/link button.svg" alt="">  
@@ -18,19 +23,48 @@
             <span>Compras da semana</span>
         </header>
         <form class="flex">
-            <input type="text" name="item" id="item" placeholder="Adicione um novo item">
-            <button type="submit" id="add-item">Adicionar item</button>
-
+            <div class="flex">
+                <input type="text" name="item" id="item" placeholder="Adicione um novo item">
+                <button type="submit" id="add-item">Adicionar item</button>
+            </div>
             <ul>
                 <li class="flex">
-                    <input type="checkbox">
-                    <span>Pão de forma</span>
-                    <div class="flex">
+                    <input type="checkbox" id="item-1">
+                    <label for="item-1">Pão de forma</label>
+                    <div>
+                        <img src="assets/icons/Lixeira.svg" alt="">
+                    </div>
+                </li>
+                <li class="flex">
+                    <input type="checkbox" id="item-2">
+                    <label for="item-2">Café preto</label>
+                    <div>
+                        <img src="assets/icons/Lixeira.svg" alt="">
+                    </div>
+                </li>
+                <li class="flex">
+                    <input type="checkbox" id="item-3">
+                    <label for="item-3">Suco de laranja</label>
+                    <div>
+                        <img src="assets/icons/Lixeira.svg" alt="">
+                    </div>
+                </li>
+                <li class="flex">
+                    <input type="checkbox" id="item-4">
+                    <label for="item-4">Bolacha</label>
+                    <div>
                         <img src="assets/icons/Lixeira.svg" alt="">
                     </div>
                 </li>
             </ul>
         </form>
+        <div id="alert" class="flex">
+            <img src="assets/icons/Icon.svg" alt="">
+            <span>O item foi removido da lista</span>
+            <div>
+                <img src="assets/icons/delete.svg" alt="">
+            </div>
+        </div>
     </main>
 </body>
 </html>

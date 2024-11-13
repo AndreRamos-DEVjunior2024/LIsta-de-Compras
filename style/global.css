@@ -23,6 +23,7 @@
 
     /* Tipografia */
     --font-family:"Inter", sans-serif;
+    --font-logo:"Sora", sans-serif;
     --title:800 1.5rem/200% var(--font-family);
     --label:600 1rem/125% var(--font-family);
     --paragraph:500 1rem/125% var(--font-family);
@@ -34,11 +35,107 @@ body {
 }
 
 main {
-    /* background-color: #374151; */
     width: 326px;
     margin-inline: auto;
+    margin-bottom: 170px;
+}
+
+#logo {
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+
+    h1 {
+        font-family: var(--font-logo);
+        color: var(--content-secondary);
+        font-weight: 800;
+        line-height: 40px;
+        font-size: 26.67px;
+    }
+
+    img {
+        width: 30.51px;
+        height: 23.33px;
+        margin-right: 7px;
+    }
+}
+
+header {
+    flex-direction: column;
+    margin-top: 4.875rem;
+
+    & a img {
+        margin-bottom: 1rem;
+    }
+
+    & span {
+        font: var(--title);
+        color: var(--content-primary);
+        margin-bottom: 2.75rem;
+    }
 }
 
 .flex{
     display: flex;
+}
+
+/* Alert de delete */
+
+#alert {
+    /* display: none; */
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    background-color: var(--color-danger);
+    margin-top: 36px;
+    align-items: center;
+    padding-inline: 12px;
+
+    span {
+        font: var(--label);
+        color: var(--always-white);
+        margin-left: 8px;
+    }
+
+    div {
+        margin-left: auto;
+    }
+}
+
+/* Responsividade */
+
+@media (width < 768px) {
+    #logo {
+        display: none;
+    }
+
+    form {
+        div {
+            flex-direction: column;
+
+            input {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media (width >= 768px) {
+    main {
+        width: 627px;
+    }
+
+    form {
+
+        div{
+            input {
+                width: 451px;
+            }
+        }
+
+        button {
+            width: 160px;
+            margin-left: auto;
+        }
+    }
 }
