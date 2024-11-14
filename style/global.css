@@ -78,10 +78,13 @@ header {
     display: flex;
 }
 
+.hide {
+    display: none;
+}
+
 /* Alert de delete */
 
 #alert {
-    /* display: none; */
     width: 326px;
     height: 44px;
     border-radius: 12px;

@@ -18,53 +18,54 @@
         </div>
         <header class="flex">
             <a href="#">
-                <img src="assets/icons/link button.svg" alt="">  
+                <img src="assets/icons/link button.svg" alt="">
             </a>
             <span>Compras da semana</span>
         </header>
         <form class="flex">
             <div class="flex">
                 <input type="text" name="item" id="item" placeholder="Adicione um novo item">
-                <button type="submit" id="add-item">Adicionar item</button>
+                <button type="submit" id="btn">Adicionar item</button>
             </div>
             <ul>
                 <li class="flex">
                     <input type="checkbox" id="item-1">
                     <label for="item-1">Pão de forma</label>
-                    <div>
+                    <div class="delete">
                         <img src="assets/icons/Lixeira.svg" alt="">
                     </div>
                 </li>
                 <li class="flex">
                     <input type="checkbox" id="item-2">
                     <label for="item-2">Café preto</label>
-                    <div>
+                    <div class="delete">
                         <img src="assets/icons/Lixeira.svg" alt="">
                     </div>
                 </li>
                 <li class="flex">
                     <input type="checkbox" id="item-3">
                     <label for="item-3">Suco de laranja</label>
-                    <div>
+                    <div class="delete">
                         <img src="assets/icons/Lixeira.svg" alt="">
                     </div>
                 </li>
                 <li class="flex">
                     <input type="checkbox" id="item-4">
                     <label for="item-4">Bolacha</label>
-                    <div>
+                    <div class="delete">
                         <img src="assets/icons/Lixeira.svg" alt="">
                     </div>
                 </li>
             </ul>
         </form>
     </main>
-    <div id="alert" class="flex">
+    <div id="alert" class="flex hide">
         <img src="assets/icons/Icon.svg" alt="">
         <span>O item foi removido da lista</span>
-        <div>
+        <div id="remove-alert">
             <img src="assets/icons/delete.svg" alt="">
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
